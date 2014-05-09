@@ -1,0 +1,1 @@
+<p><img id="captchaImage" src="{{ $url }}"></p>
