@@ -3,7 +3,7 @@
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
+class Admin extends Eloquent implements UserInterface, RemindableInterface {
     
 //    public $timestamps = false;
 
@@ -14,7 +14,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'admins';
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -24,7 +24,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     protected $hidden = array('password');
 
     public $rules = array(
-        'username' => 'required',
+        'email' => 'required',
         'password' => 'required'
     );
     

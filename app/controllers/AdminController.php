@@ -2,6 +2,12 @@
 
 class AdminController extends \BaseController {
 
+    protected $admin;
+    
+    public function __construct( Admin $admin ) {
+        $this->admin = $admin;
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -14,9 +20,10 @@ class AdminController extends \BaseController {
         
         $viewData = array(
             'captchaURL' => $captchaURL,
-            'header' => 'no'
+            'header' => 'no',
+            
         );
-        return View::make( 'admin.create' )->with( $viewData );
+        return View::make( 'admin.login' )->with( $viewData );
     }
 
 
@@ -26,9 +33,6 @@ class AdminController extends \BaseController {
      * @return Response
      */
     public function create(){
-        
-
-            //
     }
 
 
@@ -37,9 +41,7 @@ class AdminController extends \BaseController {
      *
      * @return Response
      */
-    public function store()
-    {
-            //
+    public function store(){
     }
 
 
@@ -90,5 +92,22 @@ class AdminController extends \BaseController {
             //
     }
 
+    public function login(){
+        
+        $input = Input::all();
+        
+        if( ! $this->admin->fill( $input )->isValid(  ) ){
+            $errors = $this->admin->errors->all();
 
+            foreach( $errors as $key => $message ){
+                if( $message != '' ){
+                    
+                    $split = explode(' ', $message);
+                    $errorData[$split[1]] = '<div class="alert error"><strong>'.$message.'</strong></div>';
+                }
+            }
+            
+            return Redirect::back()->withInput()->withErrors( $errorData );
+        }
+    }
 }
