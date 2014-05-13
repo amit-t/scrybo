@@ -26,18 +26,18 @@
             <script src="js/selectivizr-min.js"></script>
         <![endif]-->
         <!-- STYLES -->
-        <link rel="stylesheet" type="text/css" media="print" href="css/print.css">
-        <link rel="stylesheet" type="text/css" href="css/grid.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="js/google-code-prettify/prettify.css">
-        <link rel="stylesheet" type="text/css" href="css/uniform.default.css">
-        <link rel="stylesheet" type="text/css" href="css/iphoneMaker.css">
-        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" media="print" href="{{ URL::asset( 'css/print.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/grid.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/style.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/normalize.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/font-awesome.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'js/google-code-prettify/prettify.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/uniform.default.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/iphoneMaker.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/flexslider.css' ) }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'css/main.css' ) }}">
         <!-- SCRIPTS -->
-        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="{{ URL::asset( 'js/jquery-1.8.3.min.js' ) }}"></script>
     </head>
     <!--Body-->
     <body>
@@ -78,21 +78,21 @@
             
         </div>
         <!-- SCRIPTS -->
-        <script src="js/detectmobilebrowser.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/jquery.imagesloaded.min.js"></script>
-        <script src="js/jquery.fitvids.js"></script>
-        <script src="js/google-code-prettify/prettify.js"></script>
-        <script src="js/jquery.uniform.min.js"></script>
+        <script src="{{ URL::asset( 'js/detectmobilebrowser.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/modernizr.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/jquery.imagesloaded.min.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/jquery.fitvids.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/google-code-prettify/prettify.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/jquery.uniform.min.js' ) }}"></script>
 
         <!-- InstanceBeginEditable name="body-end" -->
-        <link rel="stylesheet" type="text/css" href="js/mediaelement/mediaelementplayer.css" >
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
-        <script src="js/easing.js"></script>
-        <script src="js/jquery.ui.totop.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset( 'js/mediaelement/mediaelementplayer.css' ) }}" >
+        <script src="{{ URL::asset( 'js/jquery.flexslider-min.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/mediaelement/mediaelement-and-player.min.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/easing.js' ) }}"></script>
+        <script src="{{ URL::asset( 'js/jquery.ui.totop.js' ) }}"></script>
         <!-- InstanceEndEditable -->
 
-        <script src="js/main.js"></script>
+        <script src="{{ URL::asset( 'js/main.js' ) }}"></script>
         <!-- SCRIPTS -->
     </body>

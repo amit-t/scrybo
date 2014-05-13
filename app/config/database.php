@@ -26,8 +26,8 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql_alt',
-//    	'default' => 'mysql',
+//	'default' => 'mysql_alt',
+    	'default' => 'mysql',
 
 
 	/*

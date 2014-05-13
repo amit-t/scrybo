@@ -16,13 +16,13 @@ Scrybo | Admin
 
         <div class="span6">
             <p>
-                {{ Form::text('email', Input::old('email'),  array( 'placeholder'=>'Email ID' )) }}
-                {{ $errors->first('email') }}
+                {{ Form::email('email', Input::old('email'),  array( 'placeholder'=>'Email ID' )) }}
+                {{ $errors->first( 'email' ) }}
             </p>           
 
             <p>
                 {{ Form::password( 'password', array( 'placeholder' => 'Password' ) ) }}
-                {{ $errors->first('password') }}
+                {{ $errors->first( 'password' ) }}
             </p>
 
         </div>
@@ -34,9 +34,10 @@ Scrybo | Admin
             </div>
             <div class="eemail_caption"> Not readable? <b class="changeCaptchaImage">Change text.</b> </div>
             <p>
-                <input class="captcha_textbox" id="captcha_textbox" placeholder="ENTER THE TEXT FROM THE IMAGE" maxlength="150" type="text">
+                {{ Form::text( 'captcha', Input::old( 'captcha' ),  array( 'placeholder'=> 'Enter the text from above image' ) ) }}
+                {{ $errors->first( 'captcha' ) }}                
             </p>
-
+                {{ $errors->first( 'general' ) }}
         </div>
 
         <div class="span6">

@@ -5,9 +5,9 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class Admin extends Eloquent implements UserInterface, RemindableInterface {
     
-//    public $timestamps = false;
+    public $timestamps = false;
 
-    protected $fillable = array( 'username', 'email', 'password' );
+    protected $fillable = array( 'email', 'password', 'admin_id', 'first_name', 'last_name' );
     
     /**
      * The database table used by the model.

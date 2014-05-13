@@ -63,15 +63,15 @@ class CaptchaController extends \BaseController {
      * - maxSize: max font size
      */
     public $fonts = array(
-        'Antykwa'  => array('spacing' => -3, 'minSize' => 57, 'maxSize' => 60, 'font' => 'AntykwaBold.ttf'),
-        'Candice'  => array('spacing' =>-1.5,'minSize' => 58, 'maxSize' => 61, 'font' => 'Candice.ttf'),
-        'DingDong' => array('spacing' => -2, 'minSize' => 57, 'maxSize' => 60, 'font' => 'Ding-DongDaddyO.ttf'),
-        'Duality'  => array('spacing' => -2, 'minSize' => 57, 'maxSize' => 68, 'font' => 'Duality.ttf'),
-        'Heineken' => array('spacing' => -2, 'minSize' => 56, 'maxSize' => 64, 'font' => 'Heineken.ttf'),
-        'Jura'     => array('spacing' => -2, 'minSize' => 59, 'maxSize' => 62, 'font' => 'Jura.ttf'),
-        'StayPuft' => array('spacing' =>-1.5,'minSize' => 58, 'maxSize' => 62, 'font' => 'StayPuft.ttf'),
-        'Times'    => array('spacing' => -2, 'minSize' => 60, 'maxSize' => 64, 'font' => 'TimesNewRomanBold.ttf'),
-        'VeraSans' => array('spacing' => -1, 'minSize' => 56, 'maxSize' => 68, 'font' => 'VeraSansBold.ttf'),
+        'Antykwa'  => array('spacing' => -3, 'minSize' => 88, 'maxSize' => 88, 'font' => 'AntykwaBold.ttf'),
+//        'Candice'  => array('spacing' =>-1.5,'minSize' => 60, 'maxSize' => 68, 'font' => 'Candice.ttf'),
+//        'DingDong' => array('spacing' => -2, 'minSize' => 60, 'maxSize' => 68, 'font' => 'Ding-DongDaddyO.ttf'),
+//        'Duality'  => array('spacing' => -2, 'minSize' => 60, 'maxSize' => 68, 'font' => 'Duality.ttf'),
+//        'Heineken' => array('spacing' => -2, 'minSize' => 60, 'maxSize' => 68, 'font' => 'Heineken.ttf'),
+//        'Jura'     => array('spacing' => -2, 'minSize' => 60, 'maxSize' => 68, 'font' => 'Jura.ttf'),
+//        'StayPuft' => array('spacing' =>-1.5,'minSize' => 60, 'maxSize' => 68, 'font' => 'StayPuft.ttf'),
+//        'Times'    => array('spacing' => -2, 'minSize' => 60, 'maxSize' => 68, 'font' => 'TimesNewRomanBold.ttf'),
+//        'VeraSans' => array('spacing' => -1, 'minSize' => 60, 'maxSize' => 68, 'font' => 'VeraSansBold.ttf'),
     );
     
     /** Wave configuracion in X and Y axes */
@@ -87,7 +87,7 @@ class CaptchaController extends \BaseController {
      * Internal image size factor (for better image quality)
      * 1: low, 2: medium, 3: high
      */
-    public $scale = 3;
+    public $scale = 5;
     
     /** 
      * Blur effect for better image quality (but slower image processing).
